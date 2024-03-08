@@ -11,9 +11,17 @@
 	<groupId>com.betacom</groupId>
 	<artifactId>orderService</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>orderService</name>
+    <packaging>pom</packaging>
+    <name>orderService</name>
 	<description>orderService</description>
-	<properties>
+    <modules>
+        <module>domain</module>
+        <module>infra</module>
+		<module>application</module>
+		<module>domain-service</module>
+        <module>repository</module>
+    </modules>
+    <properties>
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
