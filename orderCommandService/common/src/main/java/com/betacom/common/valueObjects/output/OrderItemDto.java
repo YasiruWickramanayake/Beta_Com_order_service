@@ -1,5 +1,6 @@
-package com.betacom.common.valueObjects;
+package com.betacom.common.valueObjects.output;
 
+import com.betacom.common.valueObjects.input.Money;
 import lombok.Builder;
 
 @Builder
