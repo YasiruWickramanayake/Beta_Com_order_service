@@ -1,10 +1,12 @@
-package com.betacom.common.valueObjects.input;
+package com.betacom.common.valueObjects;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 @Getter
 @Setter
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class DeliveryAddress {
     private String buildingNumber;
     private String streetAddress;

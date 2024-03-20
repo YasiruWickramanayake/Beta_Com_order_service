@@ -10,7 +10,8 @@ public enum OrderStatus {
     ORDER_READY_TO_PAY(202, "Order payment can be initiated"),
     ORDER_PAYMENT_SUCCESS(203, "Order payment success"),
     ORDER_CANCEL(204, "Order cancel"),
-    ORDER_COMPLETED(205, "Order completed"),
+    ORDER_APPROVED(205, "Order approved"),
+    ORDER_COMPLETED(206, "Order completed"),
     ORDER_PAYMENT_FAILED(301, "Order payment failed"),
     ORDER_FAILED(302, "Order failed");
 

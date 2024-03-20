@@ -1,16 +1,18 @@
-package com.betacom.common.valueObjects.input;
+package com.betacom.common.valueObjects;
 
-import com.betacom.common.valueObjects.input.Money;
-import lombok.Getter;
-import lombok.Setter;
+import com.betacom.common.valueObjects.Money;
+import lombok.*;
 
 @Getter
 @Setter
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class Product {
 
     private String productCode;
     private Money amountOfEachQuantity;
-    private Money quantity;
+    private long quantity;
     private Money netValue;
     private Money grossValue;
     private Money discountValue;

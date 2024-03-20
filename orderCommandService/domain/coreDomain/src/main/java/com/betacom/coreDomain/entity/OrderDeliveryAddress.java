@@ -28,4 +28,14 @@ public class OrderDeliveryAddress {
     public String getPostalCode() {
         return postalCode;
     }
+
+    @Override
+    public String toString() {
+        return "OrderDeliveryAddress{" +
+                "buildingNumber='" + buildingNumber + '\'' +
+                ", streetAddress='" + streetAddress + '\'' +
+                ", city='" + city + '\'' +
+                ", postalCode='" + postalCode + '\'' +
+                '}';
+    }
 }

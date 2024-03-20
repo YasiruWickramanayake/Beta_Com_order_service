@@ -23,6 +23,11 @@
             <artifactId>applicationOutput</artifactId>
             <version>${parent.version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.betacom.domainApplication</groupId>
+            <artifactId>domainApplication</artifactId>
+            <version>${parent.version}</version>
+        </dependency>
     </dependencies>
 
     <properties>

@@ -1,10 +1,11 @@
 package com.betacom.coreDomain.entity;
 
-import com.betacom.common.valueObjects.input.Money;
+import com.betacom.common.valueObjects.Money;
 
 import java.util.UUID;
 
 public class OrderItem {
+    private final Integer orderId;
     private final String orderItemCode;
     private final String orderTrackingId;
     private final Money priceOfEachQuantity;
@@ -13,12 +14,14 @@ public class OrderItem {
     private final Money netAmount;
     private final Money discountValue;
 
-    public OrderItem(String orderTrackingId,
+    public OrderItem(Integer orderId,
+                     String orderTrackingId,
                      Money priceOfEachQuantity,
                      String productCode,
                      Money grossAmount,
                      Money netAmount,
                      Money discountValue) {
+        this.orderId = orderId;
         this.orderItemCode = UUID.randomUUID().toString();
         this.orderTrackingId = orderTrackingId;
         this.priceOfEachQuantity = priceOfEachQuantity;
@@ -54,5 +57,22 @@ public class OrderItem {
 
     public Money getDiscountValue() {
         return discountValue;
+    }
+
+    public Integer getOrderId() {
+        return orderId;
+    }
+
+    @Override
+    public String toString() {
+        return "OrderItem{" +
+                "orderItemCode='" + orderItemCode + '\'' +
+                ", orderTrackingId='" + orderTrackingId + '\'' +
+                ", priceOfEachQuantity=" + priceOfEachQuantity +
+                ", productCode='" + productCode + '\'' +
+                ", grossAmount=" + grossAmount.toString() +
+                ", netAmount=" + netAmount.toString() +
+                ", discountValue=" + discountValue.toString() +
+                '}';
     }
 }
