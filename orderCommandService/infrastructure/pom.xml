@@ -9,18 +9,37 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <groupId>com.betacom.application</groupId>
-    <artifactId>application</artifactId>
+    <groupId>com.betacom.infrastructure</groupId>
+    <artifactId>infrastructure</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>applicationInput</module>
-        <module>applicationOutput</module>
-        <module>applicationCommon</module>
+        <module>publisherSubscriber</module>
     </modules>
+
     <dependencies>
+        <dependency>
+            <groupId>com.betacom.applicationOutput</groupId>
+            <artifactId>applicationOutput</artifactId>
+            <version>${parent.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.betacom.applicationInput</groupId>
+            <artifactId>applicationInput</artifactId>
+            <version>${parent.version}</version>
+        </dependency>
         <dependency>
             <groupId>com.betacom.common</groupId>
             <artifactId>common</artifactId>
+            <version>${parent.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.betacom.controller</groupId>
+            <artifactId>controller</artifactId>
+            <version>${parent.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.betacom.repository</groupId>
+            <artifactId>repository</artifactId>
             <version>${parent.version}</version>
         </dependency>
     </dependencies>

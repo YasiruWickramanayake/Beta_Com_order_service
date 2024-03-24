@@ -4,13 +4,14 @@ import com.betacom.applicationCommon.OrderCommandRepository;
 import com.betacom.common.valueObjects.OrderDto;
 import com.betacom.repository.entity.OrderEntity;
 import lombok.AllArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
-@AllArgsConstructor
 class OrderCommandRepositoryImpl implements OrderCommandRepository {
 
 
+    @Autowired
     private OrderCommandJPARepo orderCommandJPARepo;
     @Override
     public OrderDto initiateOrderRequestSave(OrderDto orderDto) {

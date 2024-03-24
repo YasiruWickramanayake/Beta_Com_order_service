@@ -32,6 +32,8 @@ class OrderCommandApplicationServiceImpl implements OrderCommandApplicationServi
         // get the order from DB
         OrderDto orderByOrderId = orderCommandRepository.getOrderByOrderId(orderProcessRequest.getOrderId());
         // approve the order
+        OrderDto orderDto = orderCommandDomainService.approveOrder(orderByOrderId);
+        // Order pass to the payment
 
         return null;
     }

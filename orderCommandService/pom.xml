@@ -20,6 +20,8 @@
 		<module>domain</module>
         <module>common</module>
         <module>controller</module>
+        <module>infrastructure</module>
+        <module>packaging</module>
     </modules>
 	<properties>
 		<java.version>17</java.version>

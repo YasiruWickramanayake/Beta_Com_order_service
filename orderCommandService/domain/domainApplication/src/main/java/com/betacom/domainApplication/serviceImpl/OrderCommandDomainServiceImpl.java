@@ -44,17 +44,21 @@ class OrderCommandDomainServiceImpl implements OrderCommandDomainService {
                 .orderGrossAmount(order.getOrderGrossAmount())
                 .orderNetAmount(order.getOrderNetAmount())
                 .orderDiscountAmount(order.getOrderDiscount())
-                .orderItemDtoList(null)
+                .orderItemDtoList(populateOrderItemDto(order.getOrderItemList()))
                 .message(order.getOrderMessage())
                 .build();
     }
 
     private List<OrderItemDto> populateOrderItemDto(List<OrderItem> orderItemList){
-        orderItemList.stream().map(orderItem -> OrderItemDto.builder()
+        return orderItemList.stream().map(orderItem -> OrderItemDto.builder()
                 .orderId(orderItem.getOrderId())
                 .OrderTrackingId(orderItem.getOrderTrackingId())
-                .orderItemRefNumber())
-
+                .orderItemRefNumber(orderItem.getOrderItemCode())
+                .amountPerQuantity(orderItem.getPriceOfEachQuantity())
+                .itemGrossAmount(orderItem.getGrossAmount())
+                .itemNetAmount(orderItem.getNetAmount())
+                .itemDiscountAmount(orderItem.getGrossAmount()).build())
+                .collect(Collectors.toList());
     }
 
 
