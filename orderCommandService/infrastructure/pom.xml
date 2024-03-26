@@ -20,28 +20,14 @@
         <dependency>
             <groupId>com.betacom.applicationOutput</groupId>
             <artifactId>applicationOutput</artifactId>
-            <version>${parent.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.betacom.applicationInput</groupId>
-            <artifactId>applicationInput</artifactId>
-            <version>${parent.version}</version>
+            <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>com.betacom.common</groupId>
             <artifactId>common</artifactId>
-            <version>${parent.version}</version>
+            <version>${project.version}</version>
         </dependency>
-        <dependency>
-            <groupId>com.betacom.controller</groupId>
-            <artifactId>controller</artifactId>
-            <version>${parent.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.betacom.repository</groupId>
-            <artifactId>repository</artifactId>
-            <version>${parent.version}</version>
-        </dependency>
+
     </dependencies>
 
     <properties>

@@ -16,6 +16,13 @@
         <module>publisher</module>
         <module>subscriber</module>
     </modules>
+    <dependencies>
+        <dependency>
+            <groupId>com.betacom.applicationInput</groupId>
+            <artifactId>applicationInput</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>

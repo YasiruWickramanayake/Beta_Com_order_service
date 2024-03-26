@@ -9,7 +9,7 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <groupId>com.betacom.applicationOutput</groupId>
+    <groupId>com.betacom.applicationCommon</groupId>
     <artifactId>applicationCommon</artifactId>
 
     <dependencies>
@@ -27,6 +27,11 @@
             <groupId>com.betacom.domainApplication</groupId>
             <artifactId>domainApplication</artifactId>
             <version>${parent.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.betacom.publisher</groupId>
+            <artifactId>publisher</artifactId>
+            <version>${project.version}</version>
         </dependency>
     </dependencies>
 

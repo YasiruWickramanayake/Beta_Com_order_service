@@ -9,4 +9,6 @@ public interface OrderCommandApplicationService {
     public OrderResponse initiateTheOrder(OrderInitiateRequest orderInitiateRequest);
 
     public OrderResponse placeOrder(OrderProcessRequest orderProcessRequest);
+
+    public void OrderPaymentResponse();
 }

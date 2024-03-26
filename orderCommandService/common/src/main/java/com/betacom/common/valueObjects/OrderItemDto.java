@@ -9,7 +9,9 @@ import lombok.Getter;
 @Builder
 public class OrderItemDto {
     private final Integer orderId;
+    private final Integer itemId;
     private final String orderItemRefNumber;
+    private final Integer quantity;
     private final String OrderTrackingId;
     private final Money amountPerQuantity;
     private final Money itemGrossAmount;

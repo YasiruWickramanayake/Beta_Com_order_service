@@ -12,8 +12,10 @@ public enum OrderStatus {
     ORDER_CANCEL(204, "Order cancel"),
     ORDER_APPROVED(205, "Order approved"),
     ORDER_COMPLETED(206, "Order completed"),
+    ORDER_PAYMENT_INITIATE_SUCCESS(207, "Order payment initiated"),
     ORDER_PAYMENT_FAILED(301, "Order payment failed"),
-    ORDER_FAILED(302, "Order failed");
+    ORDER_FAILED(302, "Order failed"),
+    ORDER_PAYMENT_INITIATE_FAILED(203, "Order payment initiation failed");
 
     private int statusCode;
     private String statusMessage;

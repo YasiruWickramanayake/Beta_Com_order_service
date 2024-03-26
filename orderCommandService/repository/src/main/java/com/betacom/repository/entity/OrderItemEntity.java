@@ -34,4 +34,10 @@ public class OrderItemEntity {
     private BigDecimal itemDiscntAmount;
     @Column(name = "item_discount_currency")
     private String itemDiscntAmntCur;
+    @Column(name = "item_amnt_per_quantity")
+    private BigDecimal amountPerQuantity;
+    @Column(name = "item_amnt_cur_per_quantity")
+    private String amntCurPerQuantity;
+    @Column(name = "quantity")
+    private Integer quantity;
 }

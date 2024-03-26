@@ -17,6 +17,25 @@
         <module>applicationOutput</module>
         <module>applicationCommon</module>
     </modules>
+<!--    <dependencyManagement>-->
+<!--        <dependencies>-->
+<!--            <dependency>-->
+<!--                <groupId>com.betacom.applicationOutput</groupId>-->
+<!--                <artifactId>applicationCommon</artifactId>-->
+<!--                <version>${project.version}</version>-->
+<!--            </dependency>-->
+<!--            <dependency>-->
+<!--                <groupId>com.betacom.applicationOutput</groupId>-->
+<!--                <artifactId>applicationCommon</artifactId>-->
+<!--                <version>${project.version}</version>-->
+<!--            </dependency>-->
+<!--            <dependency>-->
+<!--                <groupId>com.betacom.applicationOutput</groupId>-->
+<!--                <artifactId>applicationCommon</artifactId>-->
+<!--                <version>${project.version}</version>-->
+<!--            </dependency>-->
+<!--        </dependencies>-->
+<!--    </dependencyManagement>-->
     <dependencies>
         <dependency>
             <groupId>com.betacom.common</groupId>

@@ -12,6 +12,43 @@
     <groupId>com.betacom.packaging</groupId>
     <artifactId>packaging</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.betacom.applicationOutput</groupId>
+            <artifactId>applicationOutput</artifactId>
+            <version>${parent.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.betacom.applicationInput</groupId>
+            <artifactId>applicationInput</artifactId>
+            <version>${parent.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.betacom.common</groupId>
+            <artifactId>common</artifactId>
+            <version>${parent.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.betacom.controller</groupId>
+            <artifactId>controller</artifactId>
+            <version>${parent.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.betacom.repository</groupId>
+            <artifactId>repository</artifactId>
+            <version>${parent.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.betacom.infrastructure</groupId>
+            <artifactId>infrastructure</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.betacom.applicationCommon</groupId>
+            <artifactId>applicationCommon</artifactId>
+            <version>${parent.version}</version>
+        </dependency>
+    </dependencies>
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
